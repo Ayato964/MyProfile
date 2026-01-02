@@ -10,7 +10,8 @@ export const portfolioData: PortfolioData = {
             location: "Tokyo, Japan",
             links: {
                 github: "https://github.com/Ayato964",
-                linkedin: "https://www.linkedin.com/in/nagoshidayo/"
+                linkedin: "https://www.linkedin.com/in/nagoshidayo/",
+                email: "nagoshi@kthrlab.jp"
             }
         },
         about: {
@@ -52,7 +53,7 @@ export const portfolioData: PortfolioData = {
                     title: "ConcertAI",
                     url: "https://ayato964.github.io/ConcertAI/",
                     description: "Interactive demo of the fine-tuned music generation model.",
-                    thumbnail: "/images/concertai-thumb.png" // Placeholder or reuse something if needed, user didn't specify thumb for AI but logic might need it
+                    thumbnail: "/images/concertai-thumb.png"
                 },
                 {
                     type: 'Game',
@@ -95,6 +96,10 @@ export const portfolioData: PortfolioData = {
                 "Languages": ["Japanese (Native)", "English (CEFR B1/A2)"]
             }
         },
+        connection: {
+            title: "Connection",
+            text: "I am always open to discussing new research opportunities and collaborations. Please feel free to reach out via email or LinkedIn."
+        },
         footer: {
             copyright: "© 2026 Takaaki Nagoshi. All rights reserved."
         }
@@ -108,7 +113,8 @@ export const portfolioData: PortfolioData = {
             location: "東京, 日本",
             links: {
                 github: "https://github.com/Ayato964",
-                linkedin: "https://www.linkedin.com/in/nagoshidayo/"
+                linkedin: "https://www.linkedin.com/in/nagoshidayo/",
+                email: "nagoshi@kthrlab.jp"
             }
         },
         about: {
@@ -192,6 +198,10 @@ export const portfolioData: PortfolioData = {
                 "Development": ["Python", "Docker", "GCP/AWS", "Git", "Next.js"],
                 "Languages": ["Japanese (Native)", "English (CEFR B1/A2)"]
             }
+        },
+        connection: {
+            title: "Connection",
+            text: "研究・開発に関するご相談やコラボレーションについては、EmailまたはLinkedInよりお気軽にご連絡ください。"
         },
         footer: {
             copyright: "© 2026 Takaaki Nagoshi. All rights reserved."

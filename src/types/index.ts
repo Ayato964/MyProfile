@@ -40,6 +40,7 @@ export interface PortfolioContent {
     links: {
       github: string;
       linkedin: string;
+      email: string;
     };
   };
   about: {
@@ -61,6 +62,10 @@ export interface PortfolioContent {
   skills: {
     title: string;
     items: Skills;
+  };
+  connection: {
+    title: string;
+    text: string;
   };
   footer: {
     copyright: string;

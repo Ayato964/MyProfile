@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
+import { Play, Sparkles } from "lucide-react";
 
 export const Hero = () => {
     const { language } = useLanguage();
@@ -43,21 +44,52 @@ export const Hero = () => {
                     {profile.name}
                 </h1>
 
-                <h2 className="text-xl md:text-2xl text-google-blue font-medium mb-6">
+                <h2 className="text-xl md:text-2xl text-google-blue font-medium mb-4">
                     {profile.role}
                 </h2>
+
+                {/* Contact Info in Hero */}
+                <div className="flex justify-center gap-6 mb-8 text-gray-500">
+                    <a href={`mailto:${profile.links.email}`} className="flex items-center gap-2 hover:text-google-red transition-colors">
+                        <span>{profile.links.email}</span>
+                    </a>
+                    <span className="text-gray-300">|</span>
+                    <a href={profile.links.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#0077b5] transition-colors">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
 
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
                     <span className="font-semibold text-gray-800">{profile.tagline}</span> <br />
                     {profile.sub_tagline}
                 </p>
 
-                <div className="flex gap-4 justify-center">
+                <div className="flex gap-8 justify-center items-center">
                     {/* Simple Pill Buttons */}
-                    <a href="#publications" className="px-6 py-2.5 bg-google-blue text-white rounded-lg shadow hover:bg-blue-600 transition-all font-medium">
+                    <a href="#publications" className="px-6 py-2.5 bg-google-blue text-white rounded-lg shadow hover:bg-blue-600 transition-all font-medium flex items-center h-12">
                         {language === 'en' ? 'View Research' : '研究を見る'}
                     </a>
-                    <a href="#contact" className="px-6 py-2.5 bg-white text-gray-700 border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 transition-all font-medium">
+
+                    {/* ConcertAI Button (Center) */}
+                    <a
+                        href="https://ayato964.github.io/ConcertAI/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg border-4 border-transparent bg-gradient-to-tr from-google-blue via-google-red to-google-yellow p-[2px] hover:scale-110 transition-transform duration-300"
+                        title="Try ConcertAI"
+                    >
+                        <div className="w-full h-full bg-white rounded-full flex items-center justify-center group-hover:bg-gray-50 transition-colors">
+                            <Play className="text-gray-800 ml-1 fill-gray-800" size={24} />
+                        </div>
+
+                        {/* Floating AI Label/Badge */}
+                        <div className="absolute -top-10 scale-0 group-hover:scale-100 transition-transform bg-gray-900 text-white text-xs px-3 py-1 rounded-full whitespace-nowrap flex items-center gap-1">
+                            <Sparkles size={12} className="text-google-yellow" />
+                            Try ConcertAI
+                        </div>
+                    </a>
+
+                    <a href="#connection" className="px-6 py-2.5 bg-white text-gray-700 border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 transition-all font-medium flex items-center h-12">
                         {language === 'en' ? 'Contact' : 'お問い合わせ'}
                     </a>
                 </div>
