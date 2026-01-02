@@ -1,4 +1,5 @@
 import { PortfolioData } from "@/types";
+import { getAssetPath } from "@/lib/utils";
 
 export const portfolioData: PortfolioData = {
     en: {
@@ -53,14 +54,14 @@ export const portfolioData: PortfolioData = {
                     title: "ConcertAI",
                     url: "https://ayato964.github.io/ConcertAI/",
                     description: "Interactive demo of the fine-tuned music generation model.",
-                    thumbnail: "/images/concertai-thumb.png"
+                    thumbnail: getAssetPath("/images/concertai-thumb.png")
                 },
                 {
                     type: 'Game',
                     title: "RunMeMe",
                     url: "https://ayato964.github.io/RunMeMe/",
                     description: "Game developed as Google AI Student Lead Ambassador.",
-                    thumbnail: "/images/runmeme-thumb.png"
+                    thumbnail: getAssetPath("/images/runmeme-thumb.png")
                 }
             ]
         },
@@ -156,14 +157,14 @@ export const portfolioData: PortfolioData = {
                     title: "ConcertAI",
                     url: "https://ayato964.github.io/ConcertAI/",
                     description: "実際にチューニングしたモデルを試すことができるインタラクティブデモサイト。",
-                    thumbnail: "/images/concertai-thumb.png"
+                    thumbnail: getAssetPath("/images/concertai-thumb.png")
                 },
                 {
                     type: 'Game',
                     title: "RunMeMe",
                     url: "https://ayato964.github.io/RunMeMe/",
                     description: "Google AI Student Lead Ambassadorとして開発・活動したゲーム。",
-                    thumbnail: "/images/runmeme-thumb.png"
+                    thumbnail: getAssetPath("/images/runmeme-thumb.png")
                 }
             ]
         },
