@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Takaaki Nagoshi Portfolio",
     images: [
       {
-        url: "/images/profile.jpg",
+        url: "https://ayato964.github.io/MyProfile/images/profile.jpg",
         width: 800,
         height: 600,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Takaaki Nagoshi (Ayato) | AI Researcher",
     description: "Specializing in Transformer-based Music Generation & Multimodal Agents.",
-    images: ["/images/profile.jpg"],
+    images: ["https://ayato964.github.io/MyProfile/images/profile.jpg"],
   },
 };
 
