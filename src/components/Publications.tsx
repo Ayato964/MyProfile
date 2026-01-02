@@ -9,6 +9,8 @@ import { FileText, Gamepad2, BrainCircuit, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { PublicationType } from "@/types";
 
+import { getAssetPath } from "@/lib/utils";
+
 export const Publications = () => {
     const { language } = useLanguage();
     const { publications } = portfolioData[language];
@@ -59,7 +61,7 @@ export const Publications = () => {
                             <div className="w-full md:w-48 h-32 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 flex items-center justify-center border border-gray-100 relative group-hover:scale-105 transition-transform duration-500">
                                 {item.thumbnail ? (
                                     <Image
-                                        src={item.thumbnail}
+                                        src={getAssetPath(item.thumbnail)}
                                         alt={item.title}
                                         width={192}
                                         height={128}

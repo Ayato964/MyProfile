@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'MyProfile'; // Your repository name
+const repoName = 'myprofile'; // Your repository name
 
 const nextConfig: NextConfig = {
   output: 'export',
