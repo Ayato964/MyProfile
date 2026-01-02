@@ -6,7 +6,7 @@ export const portfolioData: PortfolioData = {
             name: "Takaaki Nagoshi (Ayato)",
             role: "AI Researcher / ML Engineer",
             tagline: "Architecting the Symphony of Intelligence.",
-            sub_tagline: "Specializing in Transformer-based Music Generation & Multimodal Agents.",
+            sub_tagline: "An ML engineer capable of end-to-end implementation from foundational model design through pre-training to RLHF. Developed a unique music generation model based on Transformers from scratch during graduate studies. Aims to become a highly skilled professional with deep expertise across all stages of LLM development, leveraging cutting-edge techniques like MoE.",
             location: "Tokyo, Japan",
             links: {
                 github: "https://github.com/Ayato964",
@@ -16,7 +16,7 @@ export const portfolioData: PortfolioData = {
         },
         about: {
             title: "About Me",
-            summary: "M1 Master's student at Nihon University. Bridging the gap between music theory and generative AI. My focus is on autoregressive decoder models (Transformers) for symbolic music generation, enhanced with MoE and RLHF strategies."
+            summary: "I am currently a Master's student at the Graduate School of Integrated Basic Sciences, Nihon University, starting in 2025 (Advisor: Prof. Kitahara Tethuro). Concurrently, I work as a Machine Learning Solutions Engineer Intern at InfoDeliver AI Lab, developing AI agents and automating document management workflows for B2B solutions. I also served as a Google AI Student Lead Ambassador, contributing to the tech community through demo presentations at GDG DevFest Tokyo 2025. I received my Bachelor's degree in Information Science from the College of Humanities and Sciences, Nihon University in 2025.　\n My research focuses on building and optimizing Foundation Models, specifically for symbolic music generation. My interests lie in designing Transformer architectures, improving computational efficiency using MoE (Mixture of Experts) and FlashAttention, and implementing alignment strategies via RLHF. I specialize in end-to-end development—from designing custom tokenizers to executing pre-training pipelines from scratch—rather than simply fine-tuning existing models.\n I am seeking Research Engineer or Researcher positions (Academia or Industry) focusing on Foundation Model architecture and pre-training after completing my Master's degree (expected March 2027). Please feel free to contact me if you are interested."
         },
         projects: {
             title: "Featured Projects",
@@ -109,7 +109,7 @@ export const portfolioData: PortfolioData = {
             name: "名越 崇晃 (Ayato)",
             role: "AI Researcher / ML Engineer",
             tagline: "Architecting the Symphony of Intelligence.",
-            sub_tagline: "Transformerベースの音楽生成とマルチモーダルエージェントの研究開発",
+            sub_tagline: "基盤モデルの設計から事前学習、RLHFまでを一貫して実装できるMLエンジニア。大学院ではTransformer独自の音楽生成モデルをゼロから開発。MoE等の最新技術を駆使し、LLM開発の全工程を深く理解する即戦力人材を目指す。",
             location: "東京, 日本",
             links: {
                 github: "https://github.com/Ayato964",
@@ -119,7 +119,7 @@ export const portfolioData: PortfolioData = {
         },
         about: {
             title: "自己紹介",
-            summary: "音楽理論と生成AIの融合を目指し、Transformerを用いたシンボリック音楽生成の研究を行っています。"
+            summary: "2025年より日本大学大学院 統合基礎科学研究科 修士課程に在籍しています (指導教官: 北原鉄朗 教授)． 現在は InfoDeliver AI Lab にて Machine Learning Solutions Engineer Intern として、B2B向けのAIエージェント開発およびドキュメント管理自動化ソリューションの構築を行っています．また、Google AI Student Lead Ambassador に選出され、GDG DevFest Tokyo 2025 でのデモ発表を行うなど、技術コミュニティの牽引役としても活動しました． 学部時代は情報科学を専攻し、2025年に日本大学文理学部を卒業しました．\n 基盤モデル（Foundation Model）の構築・最適化に関する研究に従事しており、特に記号的音楽（Symbolic Music）を対象とした Transformer アーキテクチャの設計、MoE (Mixture of Experts) や FlashAttention を用いた計算効率化、および RLHF (Reinforcement Learning from Human Feedback) によるアライメント技術に興味があります．既存モデルのファインチューニングに留まらず、トークナイザの設計から事前学習パイプラインの構築までをフルスクラッチで実装できるエンジニアリング能力を強みとしています．\n 修士号取得 (2027年3月見込み) 後の就職先として、アカデミア・インダストリに関係なく、基盤モデルのアーキテクチャ設計や事前学習に携われる Research Engineer / Researcher ポジションを検討しています．興味をもっていただいた方はご連絡いただけると幸いです．"
         },
         projects: {
             title: "主要プロジェクト",

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ayato964.github.io/MyProfile/sitemap.xml
