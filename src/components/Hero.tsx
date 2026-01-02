@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { useLanguage } from "@/context/LanguageContext";
-import { getAssetPath } from "@/lib/utils";
 import Image from "next/image";
 import { Play, Sparkles } from "lucide-react";
 
@@ -22,7 +21,7 @@ export const Hero = () => {
             >
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl ring-4 ring-gray-100">
                     <Image
-                        src={getAssetPath("/images/profile.jpg")}
+                        src="/images/profile.jpg"
                         alt={profile.name}
                         width={192}
                         height={192}
