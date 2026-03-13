@@ -44,7 +44,7 @@ export const portfolioData: PortfolioData = {
                         { type: 'text', value: "ConcertAI is an interactive demo platform leveraging the capabilities of MORTM. Users can generate and listen to music in real-time." },
                         { type: 'image', value: "/images/concertai-thumb.png", caption: "ConcertAI Interface" },
                         { type: 'link', url: "https://ayato964.github.io/ConcertAI/", value: "ConcertAI" },
-                        { type: "text", value: "Note: Depending on computational resources, generation may be limited during machine learning (training phases). Thank you for your understanding." },
+                        { type: "text", value: "Note: Depending on computational resources, the app may be unable to use during machine learning (training phases). Thank you for your understanding." },
                         { type: "text", value: "ConcertAI features three modes to help you shape your inspiration:" },
                         {
                             type: "list", listType: "unordered", items: [
@@ -244,7 +244,7 @@ export const portfolioData: PortfolioData = {
                         { type: 'text', value: "ConcertAIは、MORTMの機能を活用したインタラクティブなデモプラットフォームです。ユーザーはリアルタイムで音楽を生成し、試聴することができます。" },
                         { type: 'image', value: "/images/concertai-thumb.png", caption: "ConcertAIのインターフェース" },
                         { type: 'link', url: "https://ayato964.github.io/ConcertAI/", value: "ConcertAI" },
-                        { type: "text", value: "※計算資源の都合上、機械学習（学習フェーズ）を行っている間は生成が制限される場合があります。あらかじめご了承ください。" },
+                        { type: "text", value: "※計算資源の都合上、機械学習（学習フェーズ）を行っている間はアプリをご利用できない場合があります。あらかじめご了承ください。" },
                         { type: "text", value: "ConcertAIには、あなたのインスピレーションを形にするための3つのモードがあります。" },
                         {
                             type: "list", listType: "unordered", items: [
