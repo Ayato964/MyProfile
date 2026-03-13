@@ -110,7 +110,7 @@ export const ActivityDetailClient = () => {
                                         <div className="space-y-3">
                                             <div className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-xl">
                                                 <Image
-                                                    src={block.value}
+                                                    src={block.value || ""}
                                                     alt={block.caption || activity.title}
                                                     width={1200}
                                                     height={800}
@@ -129,7 +129,7 @@ export const ActivityDetailClient = () => {
                                         <div className="space-y-3">
                                             <div className="relative aspect-video rounded-2xl overflow-hidden border border-gray-100 shadow-xl bg-black">
                                                 <iframe
-                                                    src={block.value}
+                                                    src={block.value || ""}
                                                     title={block.caption || "Video video player"}
                                                     className="absolute inset-0 w-full h-full"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -140,6 +140,43 @@ export const ActivityDetailClient = () => {
                                                 <p className="text-sm text-gray-500 text-center italic">
                                                     {block.caption}
                                                 </p>
+                                            )}
+                                        </div>
+                                    )}
+
+                                    {block.type === 'link' && (
+                                        <div className="flex justify-center">
+                                            <a 
+                                                href={block.url} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 px-6 py-3 bg-google-blue text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+                                            >
+                                                <ExternalLink size={20} />
+                                                <span>{block.value}</span>
+                                            </a>
+                                        </div>
+                                    )}
+
+                                    {block.type === 'list' && (
+                                        <div className="max-w-3xl mx-auto py-2">
+                                            {block.listType === 'ordered' ? (
+                                                <ol className="list-decimal list-inside space-y-3 text-lg text-gray-700 leading-relaxed">
+                                                    {block.items?.map((item, i) => (
+                                                        <li key={i} className="pl-2">
+                                                            <span className="relative -left-2">{item}</span>
+                                                        </li>
+                                                    ))}
+                                                </ol>
+                                            ) : (
+                                                <ul className="space-y-3 text-lg text-gray-700 leading-relaxed">
+                                                    {block.items?.map((item, i) => (
+                                                        <li key={i} className="flex gap-3">
+                                                            <span className="text-google-blue font-bold">・</span>
+                                                            <span>{item}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
                                             )}
                                         </div>
                                     )}

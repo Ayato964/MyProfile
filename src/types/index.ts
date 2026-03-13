@@ -21,8 +21,11 @@ export interface Skills {
 export type PublicationType = 'Paper' | 'Creativity' | 'AI';
 
 export interface ContentBlock {
-  type: 'text' | 'image' | 'video';
-  value: string;
+  type: 'text' | 'image' | 'video' | 'link' | 'list';
+  value?: string;
+  url?: string;
+  items?: string[];
+  listType?: 'ordered' | 'unordered';
   caption?: string;
 }
 
