@@ -7,6 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Tag, ExternalLink } from "lucide-react";
 import Image from "next/image";
+import { getAssetPath } from "@/lib/utils";
 
 export const ActivityDetailClient = () => {
     const { slug } = useParams();
@@ -110,7 +111,7 @@ export const ActivityDetailClient = () => {
                                         <div className="space-y-3">
                                             <div className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-xl">
                                                 <Image
-                                                    src={block.value || ""}
+                                                    src={getAssetPath(block.value || "")}
                                                     alt={block.caption || activity.title}
                                                     width={1200}
                                                     height={800}
