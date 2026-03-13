@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { useLanguage } from "@/context/LanguageContext";
 import { Section } from "@/components/ui/Section";
-import { FileText, Gamepad2, BrainCircuit, ExternalLink } from "lucide-react";
+import { FileText, Sparkles, BrainCircuit, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { PublicationType } from "@/types";
+import Link from "next/link";
 
 
 
@@ -20,7 +21,7 @@ export const Publications = () => {
         item => activeTab === 'All' || item.type === activeTab
     );
 
-    const tabs: (PublicationType | 'All')[] = ['All', 'Paper', 'Game', 'AI'];
+    const tabs: (PublicationType | 'All')[] = ['All', 'Paper', 'Creativity', 'AI'];
 
     return (
         <Section id="publications" className="bg-gray-50/50 rounded-3xl my-10 border border-gray-100">
@@ -70,7 +71,7 @@ export const Publications = () => {
                                 ) : (
                                     <div className="text-gray-300">
                                         {item.type === 'Paper' && <FileText size={40} />}
-                                        {item.type === 'Game' && <Gamepad2 size={40} />}
+                                        {item.type === 'Creativity' && <Sparkles size={40} />}
                                         {item.type === 'AI' && <BrainCircuit size={40} />}
                                     </div>
                                 )}
@@ -78,7 +79,7 @@ export const Publications = () => {
                                 {/* Type Badge */}
                                 <div className={`absolute top-2 left-2 px-2 py-1 text-[10px] uppercase font-bold tracking-wider text-white rounded shadow-sm
                             ${item.type === 'Paper' ? 'bg-google-blue' : ''}
-                            ${item.type === 'Game' ? 'bg-google-red' : ''}
+                            ${item.type === 'Creativity' ? 'bg-google-red' : ''}
                             ${item.type === 'AI' ? 'bg-google-green' : ''}
                         `}>
                                     {item.type}
@@ -87,10 +88,17 @@ export const Publications = () => {
 
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-google-blue transition-colors">
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                                        {item.title}
-                                        <ExternalLink size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                                    </a>
+                                    {item.slug ? (
+                                        <Link href={`/activities/${item.slug}`} className="flex items-center gap-2">
+                                            {item.title}
+                                            <ExternalLink size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                                        </Link>
+                                    ) : (
+                                        <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                            {item.title}
+                                            <ExternalLink size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                                        </a>
+                                    )}
                                 </h3>
 
                                 <div className="text-sm font-medium text-gray-500 mb-3 flex flex-wrap gap-x-4">

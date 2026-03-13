@@ -18,7 +18,13 @@ export interface Skills {
   [category: string]: string[];
 }
 
-export type PublicationType = 'Paper' | 'Game' | 'AI';
+export type PublicationType = 'Paper' | 'Creativity' | 'AI';
+
+export interface ContentBlock {
+  type: 'text' | 'image' | 'video';
+  value: string;
+  caption?: string;
+}
 
 export interface Publication {
   type: PublicationType;
@@ -28,6 +34,8 @@ export interface Publication {
   url: string;
   thumbnail?: string; // path to image
   description?: string;
+  slug?: string;
+  content?: ContentBlock[];
 }
 
 export interface PortfolioContent {

@@ -30,7 +30,7 @@ export const portfolioData: PortfolioData = {
             ]
         },
         publications: {
-            title: "Publications & Works",
+            title: "Activities",
             items: [
                 {
                     type: 'Paper',
@@ -53,14 +53,26 @@ export const portfolioData: PortfolioData = {
                     title: "ConcertAI",
                     url: "https://ayato964.github.io/ConcertAI/",
                     description: "Interactive demo of the fine-tuned music generation model.",
-                    thumbnail: "/images/concertai-thumb.png"
+                    thumbnail: "/images/concertai-thumb.png",
+                    slug: "concertai",
+                    content: [
+                        { type: 'text', value: "ConcertAI is an interactive platform designed to showcase the capabilities of MORTM. It allows users to generate and listen to symbolic music in real-time." },
+                        { type: 'image', value: "/images/concertai-thumb.png", caption: "ConcertAI Interface" },
+                        { type: 'text', value: "The underlying model uses a Transformer architecture optimized with MoE for efficient inference." }
+                    ]
                 },
                 {
-                    type: 'Game',
+                    type: 'Creativity',
                     title: "RunMeMe",
                     url: "https://ayato964.github.io/RunMeMe/",
                     description: "Game developed as Google AI Student Lead Ambassador.",
-                    thumbnail: "/images/runmeme-thumb.png"
+                    thumbnail: "/images/runmeme-thumb.png",
+                    slug: "runmeme",
+                    content: [
+                        { type: 'text', value: "RunMeMe is a unique game developed during my tenure as a Google AI Student Lead Ambassador. It combines AI-driven mechanics with engaging gameplay." },
+                        { type: 'video', value: "https://www.youtube.com/embed/dQw4w9WgXcQ", caption: "Gameplay Demonstration" },
+                        { type: 'text', value: "The project was presented at GDG DevFest Tokyo 2025, highlighting the potential of AI in creative applications." }
+                    ]
                 }
             ]
         },
@@ -133,7 +145,7 @@ export const portfolioData: PortfolioData = {
             ]
         },
         publications: {
-            title: "論文・作品",
+            title: "アクティビティ",
             items: [
                 {
                     type: 'Paper',
@@ -153,17 +165,41 @@ export const portfolioData: PortfolioData = {
                 },
                 {
                     type: 'AI',
-                    title: "ConcertAI",
+                    title: "MORTMはどんな音楽を生成するの？(デモ紹介)",
                     url: "https://ayato964.github.io/ConcertAI/",
                     description: "実際にチューニングしたモデルを試すことができるインタラクティブデモサイト。",
-                    thumbnail: "/images/concertai-thumb.png"
+                    thumbnail: "/images/concertai-thumb.png",
+                    slug: "concertai",
+                    content: [
+                        { type: 'text', value: "ConcertAIは、MORTMの機能を活用したインタラクティブなデモプラットフォームです。ユーザーはリアルタイムで音楽を生成し、試聴することができます。" },
+                        { type: 'image', value: "/images/concertai-thumb.png", caption: "ConcertAIのインターフェース" },
+                        { type: 'text', value: "このモデルは、効率的な推論のためにMoE（Mixture of Experts）で最適化されたTransformerアーキテクチャを採用しています。" }
+                    ]
                 },
                 {
-                    type: 'Game',
+                    type: 'Creativity',
                     title: "RunMeMe",
                     url: "https://ayato964.github.io/RunMeMe/",
                     description: "Google AI Student Lead Ambassadorとして開発・活動したゲーム。",
-                    thumbnail: "/images/runmeme-thumb.png"
+                    thumbnail: "/images/runmeme-thumb.png",
+                    slug: "runmeme",
+                    content: [
+                        { type: 'text', value: "RunMeMeは、Google AI Student Lead Ambassadorとしての活動期間中に開発されたユニークなゲームです。AIを活用したメカニクスと魅力的なゲームプレイを組み合わせています。" },
+                        { type: 'video', value: "https://www.youtube.com/embed/dQw4w9WgXcQ", caption: "ゲームプレイのデモ" },
+                        { type: 'text', value: "このプロジェクトは GDG DevFest Tokyo 2025 で発表され、クリエイティブな分野におけるAIの可能性を強調しました。" }
+                    ]
+                },
+                {
+                    type: 'Creativity',
+                    title: "音楽プロジェクト「夜更かしさんは白昼夢を見る」",
+                    url: "https://www.youtube.com/",
+                    description: "私はMLやコンピューターサイエンスだけでなく、音楽にも非常に興味があります。ぜひ御覧ください！！",
+                    thumbnail: "/images/music.png",
+                    slug: "music",
+                    content: [
+                        { type: 'text', value: "私はMLやコンピューターサイエンスだけでなく、音楽にも非常に興味があります。ぜひ御覧ください！！" },
+                        { type: 'image', value: "/images/music.png", caption: "音楽プロジェクト「夜更かしさんは白昼夢を見る」" },
+                    ]
                 }
             ]
         },
