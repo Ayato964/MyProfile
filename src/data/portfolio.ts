@@ -4,9 +4,9 @@ export const portfolioData: PortfolioData = {
     en: {
         profile: {
             name: "Takaaki Nagoshi (Ayato)",
-            role: "AI Researcher / ML Engineer",
+            role: "AI Researcher / ML Solutions Engineer",
             tagline: "Architecting the Symphony of Intelligence.",
-            sub_tagline: "An ML engineer capable of end-to-end implementation from foundational model design through pre-training to RLHF. Developed a unique music generation model based on Transformers from scratch during graduate studies. Aims to become a highly skilled professional with deep expertise across all stages of LLM development, leveraging cutting-edge techniques like MoE.",
+            sub_tagline: "Skilled AI/ML engineer with experience in both model building and real-world application of AI to drive digital transformation. Championed the AI/ML community as a Google AI Student Lead Ambassador and GDG contributor.",
             location: "Tokyo, Japan",
             links: {
                 github: "https://github.com/Ayato964",
@@ -16,7 +16,7 @@ export const portfolioData: PortfolioData = {
         },
         about: {
             title: "About Me",
-            summary: "Skilled AI/ML engineer with experience in both model building and real-world application of AI to drive digital transformation. Built a symbolic music foundation model called MORTM, utilizing a Hybrid Mixture of Experts (MoE) architecture capable of executing complex multi-task operations—such as meta-information reasoning and chord progression analysis—while concurrently achieving a 13.1% perplexity improvement in generative tasks over the baseline. Leveraged AI expertise to automate accounting workflows at Infodeliver Inc., driving significant accuracy improvements and cost reductions. Championed the AI/ML community as a Google AI Student Lead Ambassador and GDG contributor."
+            summary: "I am a multi-disciplinary creator balancing the worlds of academic research, robust software engineering, and artistic expression. As a researcher at Nihon University, I developed MORTM, a symbolic music foundation model utilizing a Hybrid Mixture of Experts (MoE) architecture. As a Software Engineer and ML Solutions Engineer, I specialize in bridging the gap between cutting-edge AI research and production-grade utility. From architecting scalable B2B document automation agents at InfoDeliver to building responsive, high-performance web platforms like ConcertAI and RunMeMe (Next.js/Vite), I bring a full-stack perspective to every project—ensuring that complex models are delivered through reliable and beautiful software. Beyond the screen, I am a composer and producer for the music unit \"Yofukashi-san wa Hakuchumu wo Miru,\" exploring introspective narratives through sound. I strive to architect the \"Symphony of Intelligence\"—where robust code, advanced AI, and human creativity resonate as one."
         },
         projects: {
             title: "Featured Projects",
@@ -216,7 +216,7 @@ export const portfolioData: PortfolioData = {
         },
         about: {
             title: "自己紹介",
-            summary: "2025年より日本大学大学院 統合基礎科学研究科 修士課程に在籍しています (指導教官: 北原鉄朗 教授)． モデル構築とAIの実用化の両面で豊富な経験を持つ熟練のAI/MLエンジニアであり、デジタルトランスフォーメーションを推進しています。MORTMと呼ばれる記号音楽基盤モデルを構築しました。このモデルは、ハイブリッド・ミクスチャー・オブ・エキスパート（MoE）アーキテクチャを採用しており、メタ情報の推論やコード進行の分析といった複雑なマルチタスク処理を実行できると同時に、生成タスクにおいてベースラインと比較して13.1%のパープレキシティ改善を達成しました。Infodeliver Inc.では、AIの専門知識を活用して会計ワークフローを自動化し、精度の大幅な向上とコスト削減を実現しました。Google AI Student Lead AmbassadorおよびGDGコントリビューターとして、AI/MLコミュニティの活性化に尽力しています。"
+            summary: "研究者、ソフトウェア/MLエンジニア、そしてクリエイターという多角的なアイデンティティを持ち、論理と表現の融合を探求しています。研究者としては、日本大学大学院にて記号音楽基盤モデル『MORTM』を開発。並行してエンジニアとして、最先端のAI研究を堅牢なプロダクトへと昇華させる「実装力（SWE）」を強みとしています。InfoDeliverでのB2B向け自動化エージェントのアーキテクチャ設計から、Next.js/Viteを用いた美しく高速なWebアプリ開発、そしてモデルのデプロイまで。複雑なロジックを信頼性の高いソフトウェアとして届けるフルスタックな技術で社会実装を具現化します。これらの根底には『表現』への情熱があり、音楽ユニット『夜更かしさんは白昼夢を見る』での作編曲やAIを活用したゲーム制作など、技術を手段として新たな美学を形にすることに心血を注いでいます。常に「知能の交響楽（Symphony of Intelligence）」を紡ぎ出すことを目指し、私は領域を横断し続けます。"
         },
         projects: {
             title: "主要プロジェクト",

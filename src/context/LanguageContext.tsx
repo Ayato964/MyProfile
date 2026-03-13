@@ -12,7 +12,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-    const [language, setLanguage] = useState<Language>('ja'); // Default to Japanese as requested contextually implies Japanese user targeting Global
+    const [language, setLanguage] = useState<Language>('en'); // Default to English as requested
 
     const toggleLanguage = () => {
         setLanguage((prev) => (prev === 'en' ? 'ja' : 'en'));
